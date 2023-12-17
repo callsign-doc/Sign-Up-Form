@@ -1,21 +1,34 @@
 .mainContainer {
     display: flex;
+    border: 2px solid rgb(0, 0, 0);
     flex: 1;
+    height: 100vh;
 }
 .mainContainer * {
     border: 1px solid rgb(173, 173, 173);
     overflow: hidden;
 }
 
-.bigContainer{
-    width: 50%;
+.bigContainer#signUpForm{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
 }
 
 
-#backgroundImg {
+.bigContainer#logoBackgroundContainer {
+    width: 40%;
+
+    background-image: url('asset/leonardo_vinland.jpeg');
+    background-position: center;
+}
+
+
+/* #backgroundImg {
     object-fit: cover;
     height: 1000px;
     width: 1000px;
-    filter: blur(20px);
+    filter: blur(5px);
     overflow: hidden;
-}
+} */
