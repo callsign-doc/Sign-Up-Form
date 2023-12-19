@@ -85,10 +85,17 @@
     /* width: 40vw; */
 }
 
-form {
+
+#formContainer {
     display: flex;
-    flex-wrap: wrap;
-    width: 100px;
+    flex-direction: column;
+}
+.formLine {
+    display: flex;
+}
+.formBlock {
+    display: flex;
+    flex-direction: column;
 }
 #formSection {
     display: flex;
