@@ -19,7 +19,7 @@
 }
 
 .bigContainer{
-
+    
 }
 .bigContainer#signUpForm{
     display: flex;
@@ -102,6 +102,12 @@
     padding: 5px;
     border-radius: 5px;
     color: black;
+}
+input:focus {
+    border: 5px solid #2541B2
+}
+input:invalid {
+    border: 5px solid #F06543
 }
 #submitButton{
     padding: 10px;

@@ -29,12 +29,12 @@
                         <div class="formLine">
                             <div class="formBlock">
                                 <label for="firstName">First Name</label>
-                                <input type="text" name="firstName" id="firstName" placeholder="Thorfinn">
+                                <input maxlength="15" type="text" name="firstName" id="firstName" placeholder="Thorfinn">
                             </div>
 
                             <div class="formBlock">
                                 <label for="firstName">Last Name</label>
-                                <input type="text" name="lastName" id="lastName" placeholder="Karlsefni">
+                                <input maxlength="15" type="text" name="lastName" id="lastName" placeholder="Karlsefni">
                             </div>
                         </div>
 
@@ -46,7 +46,7 @@
 
                             <div class="formBlock">
                                 <label for="phoneNumber">Phone Number</label>
-                                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="8473479258">
+                                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="1234567890">
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@
                         </div>
 
                         <div class="formLine" id="submitFormLine">
-                            <button type="submit" id="submitButton">Submit</button>
+                            <button type="submit" id="submitButton" onclick="validatePasswordField()">Warp Submit</button>
                         </div>
 
                         <div class="formLine">
@@ -78,6 +78,7 @@
 
         </div>
     </div>
+<script src="script.js"></script>
 </body>
 
 </html>
