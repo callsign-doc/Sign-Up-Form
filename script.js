@@ -1,6 +1,16 @@
+let submitButton = document.getElementById('submitButton');
+
+submitButton.addEventListener('click', e => {
+    if (validatePasswordField()) {
+        //default: submit
+    } else {
+        e.preventDefault;
+    }
+});
+
 function validatePasswordField() {
-    let passwordFieldValue = document.forms('password').value;
-    let confirmPasswordFieldValue = document.forms('confirmPassword').value;
+    let passwordFieldValue = document.getElementById('password').value;
+    let confirmPasswordFieldValue = document.getElementById('confirmPassword').value;
 
     if (passwordFieldValue !== confirmPasswordFieldValue) {
         alert('Password does not match!')
@@ -9,3 +19,4 @@ function validatePasswordField() {
         return true;
     }
 }
+
