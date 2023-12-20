@@ -4,7 +4,7 @@ submitButton.addEventListener('click', e => {
     if (validatePasswordField()) {
         //default: submit
     } else {
-        e.preventDefault;
+        e.preventDefault();
     }
 });
 
